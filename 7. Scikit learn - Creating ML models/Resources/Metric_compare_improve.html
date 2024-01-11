@@ -1,0 +1,55 @@
+<div class="text-viewer--scroll-container--1iy0Z">
+    <div class="text-viewer--content--3hoqQ">
+        <div class="ud-heading-xxl text-viewer--main-heading--ZbxZA">Note: Metric Comparison Improvement</div>
+        <div class="article-asset--container--3djM8">
+            <div data-purpose="safely-set-inner-html:rich-text-viewer:html"
+                class="article-asset--content--1dAQ9 rt-scaffolding">
+                <p>In the previous video, we compared the metric results of 3 different models. However, there was a
+                    small error.</p>
+                <p>As always, when comparing models, you should be careful to make sure they're compared on the same
+                    splits of data.</p>
+                <p>For example, let's say you have <code>model_1</code> and <code>model_2</code> which each differ
+                    slightly.</p>
+                <p>If you want to compare and evaluate their results, <code>model_1</code> and <code>model_2</code>
+                    should both be trained on the same data (e.g. <code>X_train</code> and <code>y_train</code>) and
+                    their predictions should each be made on the same data, for example:</p>
+                <ul>
+                    <li>
+                        <p><code>model_1.fit(X_train, y_train)</code> -&gt; <code>model_1.predict(X_test)</code> -&gt;
+                            <code>model_1_preds</code></p>
+                    </li>
+                    <li>
+                        <p><code>model_2.fit(X_train, y_train)</code> -&gt; <code>model_2.predict(X_test)</code> -&gt;
+                            <code>model_2_preds</code></p>
+                    </li>
+                </ul>
+                <p>Note the differences here being the two models and the 2 different sets of predictions which can be
+                    compared against each other.</p>
+                <p>The example in the video followed these steps but since the data was split differently for the
+                    baseline model, the comparisons aren't fully correct.</p>
+                <p>An example end-to-end notebook with the correct methodology has been created on Google Colab here:
+                </p>
+                <p><a target="_blank" rel="noopener noreferrer"
+                        href="https://colab.research.google.com/drive/1ISey96a5Ag6z2CvVZKVqTKNWRwZbZl0m">https://colab.research.google.com/drive/1ISey96a5Ag6z2CvVZKVqTKNWRwZbZl0m</a>
+                </p>
+                <p>The short notebook compares 3 different models on the heart disease dataset.</p>
+                <ol>
+                    <li>
+                        <p>A baseline <code>RandomForestClassifier</code> (all default parameters)</p>
+                    </li>
+                    <li>
+                        <p>A <code>RandomForestClassifier</code> tuned with <code>RandomizedSearchCV</code></p>
+                    </li>
+                    <li>
+                        <p>A <code>RandomForestClassifier</code> tuned with <code>GridSearchCV</code></p>
+                    </li>
+                </ol>
+                <p>The most important part is they all use the same data splits created using
+                    <code>train_test_split()</code> and <code>np.random.seed(42)</code>.</p>
+                <p>Thank you to Ricardo for <a target="_blank" rel="noopener noreferrer"
+                        href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/learn/#questions/10054312/">pointing
+                        this out</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
