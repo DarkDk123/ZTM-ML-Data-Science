@@ -1,9 +1,9 @@
 # **Complete Machine Learning & Data Science Course by ZTM**
 
 Welcome to the Learning repository of the **Complete Machine Learning & Data Science course** by Zero to Mastery (ZTM). This repository contains all the code and notes of the course, providing myself with a comprehensive resource to learn, explore and Revise the exciting fields of Data Science and Machine Learning. 👨‍💻
-
-<img src="https://www.mrdbourke.com/content/images/size/w2000/2020/03/Data-Science-Machine-Learning-Zero-to-Mastery-outline-1.jpeg" align='center' alt="Data Science & ML" style="max-width: 50%; margin: 10px;">
-<img src="https://i0.wp.com/onlinecoursesgalore.com/wp-content/uploads/2023/06/zerotomastery.jpg?w=800&ssl=1" align='center' alt="ZTM Logo" style="max-width: 20%; margin: 10px;">
+|||
+|:-|:-|
+|<img src="https://www.mrdbourke.com/content/images/size/w2000/2020/03/Data-Science-Machine-Learning-Zero-to-Mastery-outline-1.jpeg" align='center' alt="Data Science & ML" style="max-width: 50%; margin: 10px;">|<img src="https://i0.wp.com/onlinecoursesgalore.com/wp-content/uploads/2023/06/zerotomastery.jpg?w=800&ssl=1" align='center' alt="ZTM Logo" style="max-width: 20%; margin: 10px;">|
 
 ## Overview
 
