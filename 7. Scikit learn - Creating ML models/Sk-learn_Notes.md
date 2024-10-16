@@ -1,6 +1,6 @@
 ### **What is Scikit-learn ?**
 
-It's a Python library used for creating **machine learning models**, it has lots of built-int machine learning models to use.
+It's a Python library used for creating **machine learning models**, it has lots of built-in machine learning models to use.
 
 We just need to have our cleaned Data and fit that into our desired Machine Learning Algorithm to get our trained model.
 
